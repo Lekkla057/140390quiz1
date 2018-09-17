@@ -33,7 +33,7 @@ app.get('/subjects', function(req, res) {
 connection.query('SELECT * from subjects', function (err, rows, fields) {
 
   if (err) throw err
-  res.render('pages/subjects',{subjects : rows});  
+ res.render('pages/subjects',{subjects : rows});  
 
   console.log(rows)
   connection.end()
